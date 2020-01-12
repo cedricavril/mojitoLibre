@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Original MOJITO!</string>
+    <string name="app_titre">Pour tous les goûts</string>
+    <string name="app_recette">Recette Mojito</string>
+    <string name="app_ingredients">Ingrédients</string>
+    <string name="app_preparation">Préparation</string>
+    <string name="app_etapes"></string>
+</resources>

@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cesi.wl2.mojitolibre.Page2Fragment"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ImageBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_right" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/verre_mojitos" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/app_titre"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <ScrollView
+            android:id="@+id/scrollBtns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarTrackVertical="@color/colorPrimaryDark"
+            android:fadeScrollbars="false" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <ImageButton
+                    android:id="@+id/btnAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/mojito_avec_alcool" />
+                <ImageButton
+                    android:id="@+id/btnAA_classic"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/classic_mojito" />
+                <ImageButton
+                    android:id="@+id/btnAA_royal"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/royal_mojito" />
+                <ImageButton
+                    android:id="@+id/btnSA"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/mojito_sans_alcool"/>
+                <ImageButton
+                    android:id="@+id/btnSA_lychee"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/mojito_lychee"/>
+                <ImageButton
+                    android:id="@+id/btnSA_virgin"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/virgin_mojito"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+

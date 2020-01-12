@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/BoiteSaisieNombreEntier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip">
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip" />
+
+        <EditText
+            android:id="@+id/Reponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question"
+            android:inputType="number"/>
+</RelativeLayout>

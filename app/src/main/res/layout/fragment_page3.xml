@@ -1,0 +1,131 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.cesi.wl2.mojitolibre.Page3Fragment"
+    android:background="@color/colorBackground">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ImageBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_arrow_right"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="294dp"
+                android:layout_weight="220"
+                android:gravity="center"
+                android:src="@drawable/verre_cocktail_mojitos" />
+            <TextView
+                android:id="@+id/TitreRecette"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="X"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/horloge" />
+                <TextView
+                    android:id="@+id/TempsPreparation"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="#d4ad54"
+                    android:layout_marginRight="4dp"
+                    android:textSize="40sp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="min."
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/pers_users" />
+                <TextView
+                    android:id="@+id/NombrePersonnes"
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
+                    android:text="2"
+                    android:textColor="#d4545d"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="pers."
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="4dp"
+                android:text="@string/app_ingredients"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/IngredientsRecette"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="4dp"
+                android:text="@string/app_preparation"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/PreparationRecette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:background="@color/white"
+                android:textSize="16sp"
+                android:textColor="@color/colorBackground"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
